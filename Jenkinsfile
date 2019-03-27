@@ -3,11 +3,15 @@ node {
 
    stage('Clone Repository') {
         // Get some code from a GitHub repository
-        git 'https://KristiansK123@bitbucket.org/KristiansK123/spring-petclinic.git'
+  //      git 'https://KristiansK123@bitbucket.org/KristiansK123/spring-petclinic.git'
+      git clone https://github.com/spring-projects/spring-petclinic.git
+      cd spring-petclinic
     
    }
    stage('Build Maven Image') {
-        docker.build("maven-build")
+ //       docker.build("maven-build")
+      ./mvnw package
+      
    }
    
    stage('Run Maven Container') {
