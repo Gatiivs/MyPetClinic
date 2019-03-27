@@ -17,8 +17,8 @@ node {
    
    
    stage('Build Maven Image') {
- //       docker.build("maven-build")
-      ./mvnw package
+       docker.build("maven-build")
+   //   ./mvnw package
       
    }
    
