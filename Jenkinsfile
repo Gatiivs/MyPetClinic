@@ -1,15 +1,23 @@
-
-node {
 /*
+node {
+  */ 
    pipeline {
     agent {
         docker { image 'node:7-alpine' }
           }
 
-}
-  */ 
+
+
    
-   
+   stages {
+      
+      stage('Test') {
+            steps {
+                sh 'node --version'
+            }
+        }
+      
+      
    stage('Clone Repository') {
         // Get some code from a GitHub repository
   //      git 'https://KristiansK123@bitbucket.org/KristiansK123/spring-petclinic.git'
@@ -50,4 +58,6 @@ node {
         sh "docker run --name java-deploy-container --volumes-from maven-build-container -d -p 8080:8080 denisdbell/petclinic-deploy"
    }
 
+}
+   }
 }
