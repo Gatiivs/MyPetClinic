@@ -11,7 +11,8 @@ node {
   stage('Test') {
             steps {
                 sh 'node --version'
-            }
+                 }
+  }
  
  stage('Clone Repository') {
         // Get some code from a GitHub repository
@@ -19,7 +20,7 @@ node {
       git 'https://github.com/spring-projects/spring-petclinic.git'
 //      cd spring-petclinic
     
-   }
+                         }
       
       
 }
