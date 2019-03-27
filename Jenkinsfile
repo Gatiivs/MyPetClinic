@@ -7,7 +7,7 @@ node {
           }
 
 
-
+/*
    
    stages {
       
@@ -16,7 +16,7 @@ node {
                 sh 'node --version'
             }
         }
-      
+    */   
       
    stage('Clone Repository') {
         // Get some code from a GitHub repository
@@ -59,4 +59,4 @@ node {
    }
 
 }
-   }
+   
