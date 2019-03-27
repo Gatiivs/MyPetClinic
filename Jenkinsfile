@@ -4,8 +4,8 @@ node {
    stage('Clone Repository') {
         // Get some code from a GitHub repository
   //      git 'https://KristiansK123@bitbucket.org/KristiansK123/spring-petclinic.git'
-      git clone 'https://github.com/spring-projects/spring-petclinic.git'
-      cd spring-petclinic
+      git 'https://github.com/spring-projects/spring-petclinic.git'
+//      cd spring-petclinic
     
    }
    
