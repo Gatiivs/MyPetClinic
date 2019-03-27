@@ -1,5 +1,5 @@
 
-//node {
+node {
 
    pipeline {
     agent {
@@ -12,7 +12,7 @@
                   }
                       }
            }
-//}
+}
    
    
    
