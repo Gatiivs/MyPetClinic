@@ -1,13 +1,13 @@
 
-//node {
-
+node {
+/*
    pipeline {
     agent {
         docker { image 'node:7-alpine' }
           }
 
-//}
-   
+}
+  */ 
    
    
    stage('Clone Repository') {
@@ -20,8 +20,8 @@
    
     stage('Test docker ver') {
         // Get some code from a GitHub repository
-      docker version
-    
+     // docker version
+    sudo systemctl start docker
    }
    
    
