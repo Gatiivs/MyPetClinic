@@ -8,12 +8,22 @@ node {
       cd spring-petclinic
     
    }
+   
+    stage('Test docker ver') {
+        // Get some code from a GitHub repository
+      docker version
+    
+   }
+   
+   
    stage('Build Maven Image') {
  //       docker.build("maven-build")
       ./mvnw package
       
    }
    
+   
+
    stage('Run Maven Container') {
        
         //Remove maven-build-container if it exisits
