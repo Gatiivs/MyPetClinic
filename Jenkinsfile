@@ -11,7 +11,7 @@ node {
    }
    stage('Build Maven Image') {
     //   sudo docker.build("maven-build")
-      sh "sudo docker build -t maven-build"
+      sh "docker build -t maven-build"
       
    }
    
