@@ -11,7 +11,7 @@ node {
    }
    stage('Build Maven Image') {
     //   sudo docker.build("maven-build")
-      sh "docker build maven-build"
+      sh "./mvnw package"
       
    }
    
