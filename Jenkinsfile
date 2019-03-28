@@ -12,7 +12,7 @@ node {
    
       stage('Open SpringClinic') {
         // Get some code from a GitHub repository
-       sh "cd spring-clinic"
+       sh "cd spring-petclinic"
     
    }
    
