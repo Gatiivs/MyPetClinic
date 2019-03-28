@@ -5,6 +5,8 @@ node {
         env.PATH = "${dockerHome}/bin:${env.PATH}"
     }
    stage('Clone Repository') {
+      // Get some code from a GitHub repository
+      sh 'rm spring-petclinic'
         // Get some code from a GitHub repository
         sh 'git clone https://github.com/Gatiivs/spring-petclinic.git'
     
