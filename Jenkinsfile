@@ -1,9 +1,6 @@
 node {
 
-   stage('Initialize'){
-        def dockerHome = tool 'myDocker'
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
-    }
+
    stage('Clone Repository') {
       // Get some code from a GitHub repository
       sh 'rm -r spring-petclinic'
