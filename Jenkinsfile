@@ -12,13 +12,14 @@ node {
     
    }
    
+   /*
    
       stage('Open SpringClinic') {
         // Get some code from a GitHub repository
        sh "cd spring-petclinic"
     
    }
-   
+   */
    
    stage('Build Maven Image') {
     //   sudo docker.build("maven-build")
