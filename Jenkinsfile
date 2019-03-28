@@ -5,7 +5,7 @@ node {
       // Get some code from a GitHub repository
       sh 'rm -r spring-petclinic'
         // Get some code from a GitHub repository
-        sh 'git clone https://github.com/spring-projects/spring-petclinic'
+        sh 'git clone https://github.com/Gatiivs/spring-petclinic.git'
     
    }
    
