@@ -6,7 +6,7 @@ node {
     }
    stage('Clone Repository') {
       // Get some code from a GitHub repository
-      sh 'rm spring-petclinic'
+      sh 'rmdir spring-petclinic'
         // Get some code from a GitHub repository
         sh 'git clone https://github.com/Gatiivs/spring-petclinic.git'
     
