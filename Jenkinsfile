@@ -6,9 +6,10 @@ node {
     }
    stage('Clone Repository') {
         // Get some code from a GitHub repository
-        git 'https://github.com/spring-projects/spring-petclinic.git'
+        sh 'git clone https://github.com/spring-projects/spring-petclinic.git'
     
    }
+   
    
       stage('Open SpringClinic') {
         // Get some code from a GitHub repository
